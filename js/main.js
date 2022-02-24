@@ -1,5 +1,4 @@
 
-
 const options = document.querySelectorAll(".options");
 const computerOptions = ["rock", "paper", "scissors"];
 let computerInput = computerOptions[Math.floor(Math.random() * 3)];
@@ -38,6 +37,7 @@ function game() {
         element.addEventListener('click', event => {
             event.preventDefault();
             playerInput = element.value;
+            computerInput = computerOptions[Math.floor(Math.random() * 3)];
 
             console.log(playerInput);
             console.log(computerInput);
