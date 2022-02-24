@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="center">
+            <h1>Rock Paper Scissors</h1>
+            <span id="win-rounds">
+                <h2>Win five rounds and be crowned the victor!</h2>
+            </span>
+            <h3>
+                Player <span id="p-score">0</span> - <span id="c-score">0</span> Computer
+            </h3>
+        </div>
+
+        <div class="display-moves">
+            <div class="results">
+
+            </div>
+
+            <div class="player-action">
+                <h3>Click on the image below to select your move:<h3>
+                        <div class="action">
+                            <input class="options" type="image" src="./assets/Rock.svg" value="rock" />
+                            <input class="options" type="image" src="./assets/Paper.svg" value="paper" />
+                            <input class="options" type="image" src="./assets/Scissors.svg" value="scissors" />
+                        </div>
+            </div>
+            <div class="game-over">
+
+                <p> Game Over! <button type="submit" id="submitBtn">Play Again?</button> </p>
+            </div>
+
+
+
+        </div>
+
+
+
+        <script src="js/main.js"></script>
+</body>
+
+</html>
