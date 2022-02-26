@@ -42,7 +42,7 @@ function game() {
             console.log(playerInput);
             console.log(computerInput);
             winner();
-            if (playerTotal === 3 || computerTotal === 3) {
+            if (playerTotal === 5 || computerTotal === 5) {
                 // results.innerHTML = gameOver;
                 ultimateWinner();
                 actions.style.display = 'none';
@@ -86,7 +86,7 @@ function winner() {
 }
 
 function ultimateWinner() {
-    if (playerTotal === 3) {
+    if (playerTotal === 5) {
         winRounds.innerHTML = "<h2> You are the Winner! </h2>"
     } else {
         winRounds.innerHTML = "<h2> Computer is the Winner!</h2>"
